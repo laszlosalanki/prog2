@@ -44,9 +44,9 @@ public class JFC extends Frame implements KeyListener {
 			addKeyListener(this);
 		}
 
-		gd.getFullScreenWindow().setLayout(new FlowLayout());
-		gd.getFullScreenWindow().add(jta);
-		gd.getFullScreenWindow().add(lbl);
+		gd.getFullScreenWindow().setLayout(new FlowLayout(FlowLayout.LEADING));
+		gd.getFullScreenWindow().add(jta, FlowLayout.LEFT);
+		gd.getFullScreenWindow().add(lbl, FlowLayout.LEFT);
 		gd.getFullScreenWindow().getFocusableWindowState();
 		
 	}
